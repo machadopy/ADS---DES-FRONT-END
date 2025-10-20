@@ -3,32 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastre-se</title>
+    <title>Fuel Request</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="cad">
     <header>
-        <h1>Cadastre-se</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Indice</a></li>
+        <h1>FUEL Request</h1>
+        <div class = "menuresp">
+            <div class="l1"></div>
+            <div class="l2"></div>
+            <div class="l3"></div>
+        </div>
+        <nav class="">
+            <ul class="navlist">
+                <li><a href="index.html">Quem somos</a></li>
                 <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Formulario Cadastro</h2>
-            <form>
+     </header>
+
+    <section>
+        <h2>Formulario Cadastro</h2>
+         <form class="cadastro"> 
+            
                 <fieldset>
-                    <legend>Usuario</legend>
-                    <label for="usuario">Usuario:</label>
-                    <input type="text" id="usuario" required>
-                    <label for="senha">Senha:</label>
-                    <input type="text" id="senha" required>
+                        <legend>Tem interesse? Cadastre-se, iremos te contatar! </legend>
+                            <div class="field.cad">
+                                <label for="usuario">Usuario: </label><input type="text" id="usuario" required>
+                            </div>
+                            <div class="field.cad">
+                                <label for="email">Email: </label><input type="text" id="email" required>
+                            </div>
+                            <div class="field.cad">
+                                <button>Enviar</button>
+                            </div>
                 </fieldset>
-            </form>
-        </section>
-    </main>
+            
+        </form>
+    </section>
+    <footer>
+        <p class="cred">Creditos</p>
+        <p class="cred">machadopy®</p>
+    </footer>
+    <main></main>
+    <script src="js/mobilenavbar.js"></script>
+
 </body>
 </html>
