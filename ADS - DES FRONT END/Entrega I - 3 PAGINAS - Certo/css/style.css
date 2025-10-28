@@ -1,0 +1,298 @@
+body{
+    margin: 0;
+    color: #2c3e50;
+    background-color: #7dabd8;
+    height: 100%;
+}
+
+body.cad{
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.cadastro{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+}
+
+.field.cad{
+    display: flex;
+    flex-direction: column;
+
+}
+
+header{
+    display: flex;
+    color: #ffffff;
+    background-color: #7dabd8;
+    padding-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menuresp{
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.menuresp div{
+    display: none;
+    width: 32px;
+    height: 2px;
+    background: #ffffff;
+    margin: 8px ;
+}
+
+.navlist{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+
+.outdoor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+h2.projeto{
+    text-align: center;
+    color: #ffffff;
+    font-size: 70px;
+    background-color: #2c3e50;
+    margin: 0;
+}
+.h4textcont{
+    font-size: 30px;
+    margin: 0;
+}
+
+h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    }
+
+.adjbox{
+
+    display: flex;
+    padding-inline: 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0px;
+}
+
+.sideimg{
+    display: flex;
+    padding: 20px;
+    
+}
+.sideimg img {
+    flex-shrink: 0;
+    max-width: 300px;
+    height: auto;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.textcont{
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 20px;
+    padding-top: 50px;
+
+}
+
+h4{
+    font-size: 25px;
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+footer{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    }
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    }
+
+
+
+
+
+@media(max-width:768px) {
+    img{
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    header{
+    
+        color: #ffffff;
+        background-color: #ca4309;
+        align-items: center;
+        padding-left: 20px;
+
+    }
+
+    .outdoor{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        padding-left: 0;
+    }
+    .container{
+        width: 90%;
+    }
+    article{
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 20px;
+        gap: 0;
+    }
+    .navlist{
+
+        
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vh;
+        height: 92vh;
+        background-color: #ca4309;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        gap: 5px;
+        margin-top: 10px;
+        padding-right: 0;
+        transform: translate(100%);
+        transition: transform 0.3s ease-in;
+
+    }
+
+    .navlist li{
+        margin-left: 0;
+        opacity: 0;
+        transform: translateX(20px);
+        transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+
+    .navlist.active{
+        transform: translate(0);
+    }
+
+
+    .navlist.active li{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .menuresp div{
+        display: block;
+        margin-left: auto;
+
+    }
+    h2.projeto{
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        padding: 0;
+        
+    }
+    .sideimg{
+        flex-direction: column;
+        align-items: center;
+    }
+    .projetos{
+        display: flex;
+    }
+    img{
+        display: none;       
+    }
+
+    .cadastro{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .field.cad{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    button{
+        align-items: center;
+    }
+}
+
+@keyframes navlinkfade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }to{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
